@@ -1,5 +1,5 @@
-in5t4-h4ck
-==========
+in5t4-h4ck v1.3
+===============
 
 Gets a visitors nationality, hostname, IP and user-agent info (UA).
 
