@@ -5,4 +5,4 @@ Gets a visitors nationality, hostname, IP and user-agent info (UA).
 
 Requirements
 ============
-/PHP/ /5.x/ + /libapache2-mod-geoip/.
+PHP 5.x + libapache2-mod-geoip.
