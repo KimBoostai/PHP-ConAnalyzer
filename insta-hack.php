@@ -48,10 +48,10 @@ print "<p>You are visiting from: <b>" . $country_name . "</b><br/><br/>\n";
 // Writes hostname in XHTML.
 print "Your computer/gateway hostname is:<br/><b>" . $hostname . "</b><br/><br/>\n";
 
-// The variable "dnp_ip" is a manual flag to prevent writing the ip address in XHTML.
+// The variable "dnp_ip" is a manual flag to prevent writing the IP-address in XHTML.
 if ( $dnp_ip != true )
 {
-    // Writes visitors IP-addresse in XHTML.
+    // Writes visitors IP-address in XHTML.
     print "Hostname was retrieved for the ip-address: <b>" . $ip . "</b><br/><br/>\n";
 }
 
