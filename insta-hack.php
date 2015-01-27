@@ -21,7 +21,7 @@
    Modifisert	20141118-00:03-GMT+1
 
    GeoIP Apache module (c) MaxMind - http://www.maxmind.com/app/mod_geoip
-   All code in this file is copyright (c) 2014 - http://www.pizslacker.org
+   All code in this file is copyright (c) 2015 - http://www.pizslacker.org
 */
 
 // Gets the visitor IP-address through a global Apache2-variable.
