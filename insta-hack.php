@@ -1,5 +1,5 @@
 <?php
-/* Copyright 2010-2014 Kim Olsen <kim@pizslacker.org>
+/* Copyright 2010-2015 Kim Olsen <kim@pizslacker.org>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 
    Creator:     Kim Olsen <kim@pizslacker.org>
    Opprettet	20100514-02:25-GMT+1
-   Modifisert	20141118-00:03-GMT+1
+   Modifisert	20150217-11:19-GMT+1
 
    GeoIP Apache module (c) MaxMind - http://www.maxmind.com/app/mod_geoip
    All code in this file is copyright (c) 2015 - http://www.pizslacker.org
