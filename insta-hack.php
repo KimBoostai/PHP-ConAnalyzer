@@ -18,7 +18,7 @@
 
    Creator:     Kim Olsen <kim@pizslacker.org>
    Opprettet	20100514-02:25-GMT+1
-   Modifisert	20150217-11:19-GMT+1
+   Modifisert	20150624-15:30-GMT+1
 
    GeoIP Apache module (c) MaxMind - http://www.maxmind.com/app/mod_geoip
    All code in this file is copyright (c) 2015 - http://www.pizslacker.org
@@ -62,7 +62,7 @@ if (isset($user_agent))
 print "Your browser supplied this user-agent information:<br />\n<b>" . $user_agent . "</b></p>";
 }
 
-// Line-return.
+// Return / newline.
 echo "\r\n";
 
 ?>
