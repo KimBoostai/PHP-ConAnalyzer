@@ -17,8 +17,8 @@
    Gets a visitors nationality, hostname, ip and user-agent info (UA).
 
    Creator:     Kim Olsen <kim@pizslacker.org>
-   Opprettet	20100514-02:25-GMT+1
-   Modifisert	20150624-15:30-GMT+1
+   Created:	20100514-02:25-GMT+1
+   Lastchange:	20150624-15:31-GMT+1
 
    GeoIP Apache module (c) MaxMind - http://www.maxmind.com/app/mod_geoip
    All code in this file is copyright (c) 2015 - http://www.pizslacker.org
