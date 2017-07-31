@@ -1,5 +1,5 @@
 <?php
-/* Copyright 2010-2016 Kim Olsen <kim@pizslacker.org>
+/* Copyright 2010-2017 Kim Olsen <kim@pizslacker.org>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
