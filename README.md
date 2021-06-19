@@ -1,5 +1,5 @@
-ConAnalyzer v1.3
-===============
+ConAnalyzer v1.3.1
+==================
 
 Gets a visitors nationality, hostname, IP and user-agent info (UA).
 
