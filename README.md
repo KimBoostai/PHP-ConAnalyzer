@@ -10,5 +10,3 @@ deprecated in 2022.
 Requirements
 ============
 PHP 5.x + Apache httpd 2.x + libapache2-mod-geoip.
-
-GeoIP Apache module (c) MaxMind - http://www.maxmind.com/app/mod_geoip
