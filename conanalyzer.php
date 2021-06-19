@@ -24,45 +24,39 @@
    All code in this file is copyright (c) 2015 - http://www.pizslacker.org
 */
 
-// Gets the visitor IP-address through a global Apache2-variable.
-$ip = $_SERVER['REMOTE_ADDR'];
-
-// Gets visitors canonical hostname via
-// the PHP-function 'gethostbyaddr'.
-if (empty($hostname))
+/   Retrieve IP address of visiting client.
+function getIP()
 {
-    // Gets hostname based on IP-address.
-    $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+    if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check IFNOT EMPTY client IP.
+    {
+      $ip=$_SERVER['HTTP_CLIENT_IP'];
+    }
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) //check IP for proxy forwarding.
+    {
+      $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+    }
+    else //use standard REMOTE_ADDR.
+    {
+      $ip=$_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
 }
+$ip = getIP();
+$gi_ip = $ip;
 
-// Visitor geolocatioon (nationality).
-if (empty($country_name))
-{
-    // Gets nationality via 'mod_geoip's note-variable from the Apache-server.
-    $country_name = apache_note("GEOIP_COUNTRY_NAME");
-}
+// Include GeoIP.
+include_once("geoip.inc");
 
-// Writes nationality in XHTML.
-print "<p>You are visiting from: <b>" . $country_name . "</b><br/><br/>\n";
+// read GeoIP database
+$gi = geoip_open("GeoIP.dat", GEOIP_STANDARD);
 
-// Writes hostname in XHTML.
-print "Your computer/gateway hostname is:<br/><b>" . $hostname . "</b><br/><br/>\n";
+// map IP to country
+$gi_country_name = geoip_country_name_by_addr($gi, $gi_ip);
+$gi_country_code = geoip_country_code_by_addr($gi, $gi_ip);
+return $gi_country_name;
+return $gi_country_code;
+return $gi_ip;
 
-// The variable "dnp_ip" is a manual flag to prevent writing the IP-address in XHTML.
-if ( $dnp_ip != true )
-{
-    // Writes visitors IP-address in XHTML.
-    print "Hostname was retrieved for the ip-address: <b>" . $ip . "</b><br/><br/>\n";
-}
-
-// User-Agent information.
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-if (isset($user_agent))
-{
-print "Your browser supplied this user-agent information:<br />\n<b>" . $user_agent . "</b></p>";
-}
-
-// Return / newline.
-echo "\r\n";
-
+// close database handler
+geoip_close($gi);
 ?>
