@@ -7,6 +7,11 @@ This script-version still works, but due to MaxMind changing their database-form
 it should be considered abandonware. The legacy database currently used is going to be
 deprecated in 2022.
 
+Usage
+=====
+
+Just include the PHP-files "conanalyzer.php" and "getBrowser.php" in your HTML-code.
+
 Requirements
 ============
 PHP 5.x + Apache httpd 2.x + libapache2-mod-geoip.
