@@ -24,7 +24,7 @@
    All code in this file is copyright (c) 2015 - http://www.pizslacker.org
 */
 
-/   Retrieve IP address of visiting client.
+// Retrieve IP address of visiting client.
 function getIP()
 {
     if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check IFNOT EMPTY client IP.
