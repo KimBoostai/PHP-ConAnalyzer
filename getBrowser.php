@@ -119,3 +119,4 @@ function getBrowser()
 $ua=getBrowser();
 $yourbrowser= "You are using <b>" . $ua['name'] . " (v" . $ua['version'] . ")</b> for <b>" . $ua['platform'] . "</b> to view this web-page.<br/><br/>You are (<i>probably</i>) using a <b>" . $ua['platform'] .  "</b> operating system (<i>or virtual machine</i>).<br/><br/> Your browser reports: <br ><b>" . $ua['userAgent'] . "</b>";
 return $yourbrowser;
+?>
