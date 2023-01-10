@@ -4,8 +4,7 @@ ConAnalyzer v1.3.1
 Gets a visitors nationality, hostname, IP and user-agent info (UA).
 
 This script-version still works, but due to MaxMind changing their database-format (2014)
-it should be considered abandonware. The legacy database currently used is going to be
-deprecated in 2022.
+it should be considered abandonware. The legacy database currently used was deprecated in 2022.
 
 Usage
 =====
