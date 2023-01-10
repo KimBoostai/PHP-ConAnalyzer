@@ -15,3 +15,6 @@ Just include the PHP-files "conanalyzer.php" and "getBrowser.php" in your HTML-c
 Requirements
 ============
 PHP 5.x + Apache httpd 2.x + libapache2-mod-geoip.
+
+And the GeoIP v2 database (obsolete). A free version can be found here:
+[mailfud.org](https://mailfud.org/geoip-legacy/GeoIP.dat.gz)
